@@ -1,14 +1,13 @@
 let computerPlay = Math.ceil(Math.random() * 3);
 
 if (computerPlay === 1) {
-  computerPlay = 'Rock'
+  computerPlay = 'rock'
 } else if (computerPlay === 2) {
-  computerPlay = 'Paper'
+  computerPlay = 'paper'
 } else {
-  computerPlay = 'Scissors'
+  computerPlay = 'scissors'
 }
 
+let userChoice = prompt('Choose "Rock", "Paper" or "Scissors"');
+let userPlay = userChoice.toLowerCase();
 
-
-
-console.log(computerPlay);
