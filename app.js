@@ -26,7 +26,7 @@ if (userPlay === 'rock' && computerPlay === 'scissors') {
 } else if ((userPlay === 'rock' && computerPlay === 'rock') || (userPlay === 'paper' && computerPlay === 'paper') || (userPlay === 'scissors' && computerPlay === 'scissors')) {
   alert('Tie game!')
 } else {
-  alert('Error! Enter valid input!')
+  alert('Error! Invalid input!')
 }
 console.log(userPlay);
 console.log(computerPlay);
