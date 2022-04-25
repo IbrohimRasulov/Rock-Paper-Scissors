@@ -27,8 +27,4 @@ if (userPlay === 'rock' && computerPlay === 'scissors') {
   alert('Tie game!');
 } else {
   alert('Error! Invalid input!');
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> refs/remotes/origin/development
