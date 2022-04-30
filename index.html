@@ -10,7 +10,52 @@
 </head>
 <body>
   <div id="container">
+    <div id="title">
+      <h1>ROCK PAPER SCISSORS</h1>
+    </div>
 
+    <div id="hands">
+      <div id="left-hand">
+        <img src="assets/rock-left.png" class="hidden">
+        <img src="assets/paper-left.png" class="hidden">
+        <img src="assets/scissors-left.png" class="hidden">
+      </div>
+      <div id="right-hand">
+        <img src="assets/rock-right.png" class="hidden">
+        <img src="assets/paper-right.png" class="hidden">
+        <img src="assets/scissors-right.png" class="hidden">
+      </div>
+      </div>
+
+      <div id="players">
+        <div id="user-player">
+          <img src="assets/player.png">
+          <h3>You</h3>
+        </div>
+        <div id="computer-player">
+          <img src="assets/robot.png">
+          <h3>Computer</h3>
+        </div>
+      </div>
+
+      <div id="score">
+        <div id="user-score"></div>
+        <div id="score-border"> : </div>
+        <div id="computer-score"></div>
+      </div>
+
+      <div id="weapon-selecion">
+        <h2>Choose your weapon…</h2>
+        <button>Rock</button>
+        <button>Paper</button>
+        <button>Scissors</button>
+      </div>
+    </div>
+
+    <div id="popup">
+      <p></p>
+      <button>Play again</button>
+    </div>
   </div>
 
   <script src="app.js"></script>

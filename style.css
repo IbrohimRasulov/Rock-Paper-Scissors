@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 body {
-  background-color: rgb(52, 224, 204);
+  background-color: #f1f5f9;
+  /* font-family: 'Quicksand', sans-serif; */
+  font-family: 'Source Code Pro', monospace;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  font-family: 'Source Code Pro', monospace;
 }
