@@ -1,5 +1,7 @@
 const hands = ["rock", "paper", "scissors"];
 const playerSelection = "rock";
+let playerScore = 0;
+let computerScore = 0;
 
 
 function computerPlay() {
@@ -9,22 +11,37 @@ function computerPlay() {
 
 const playRound = function (playerSelection, computerSelection) {
   if (playerSelection === 'rock' && computerSelection === 'scissors') {
-    console.log('You won! Rock beats scissors!');
+    playerScore += 1;
   } else if (playerSelection === 'rock' && computerSelection === 'paper') {
-    console.log('You lost! Paper beats rock!');
+    computerScore += 1;
   } else if (playerSelection === 'paper' && computerSelection === 'rock') {
-    console.log('You won! Paper beats rock!');
+    playerScore += 1;
   } else if (playerSelection === 'paper' && computerSelection === 'scissors') {
-    console.log('You lost! Scissors beats paper!');
+    computerScore += 1;
   } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-    console.log('You won! Scissors beats paper!');
+    playerScore += 1;
   } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
-    console.log('You lost! Rock beats scissors!');
-  } else if ((playerSelection === 'rock' && computerSelection === 'rock') || (playerSelection === 'paper' && computerSelection === 'paper') || (playerSelection === 'scissors' && computerSelection === 'scissors')) {
-    console.log('Tie game!');
+    computerScore += 1;
   } else {
-    console.log('Error! Invalid input!');
   }
 };
 
-playRound(playerSelection, computerPlay());
+const game = function () {
+  for (let i = 0; i < 5; i++) {
+    playRound(playerSelection, computerPlay());
+  }
+
+  if (playerScore > computerScore) {
+    console.log(`${playerScore} and ${computerScore}`);
+    console.log('You won!');
+  } else if (playerScore < computerScore) {
+    console.log(`${playerScore} and ${computerScore}`);
+    console.log('You lost!');
+  } else {
+    console.log(`${playerScore} and ${computerScore}`);
+    console.log('Tie game!');
+  }
+
+}
+
+game();
