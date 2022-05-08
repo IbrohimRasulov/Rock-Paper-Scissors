@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div id="container">
     <div id="title">
@@ -16,48 +18,50 @@
 
     <div id="hands">
       <div id="left-hand">
-        <img src="assets/rock-left.png" class="hidden">
-        <img src="assets/paper-left.png" class="hidden">
-        <img src="assets/scissors-left.png" class="hidden">
+        <!-- <img src="assets/rock-left.png"> -->
+        <img src="assets/paper-left.png">
+        <!-- <img src="assets/scissors-left.png"> -->
       </div>
+
       <div id="right-hand">
-        <img src="assets/rock-right.png" class="hidden">
-        <img src="assets/paper-right.png" class="hidden">
-        <img src="assets/scissors-right.png" class="hidden">
+        <img src="assets/rock-right.png">
+        <!-- <img src="assets/paper-right.png"> -->
+        <!-- <img src="assets/scissors-right.png"> -->
       </div>
+    </div>
+
+    <div id="players">
+      <div id="user-player">
+        <img src="assets/player.png">
+        <h3>You</h3>
       </div>
 
-      <div id="players">
-        <div id="user-player">
-          <img src="assets/player.png">
-          <h3>You</h3>
-        </div>
-        <div id="computer-player">
-          <img src="assets/robot.png">
-          <h3>Computer</h3>
-        </div>
-      </div>
-
-      <div id="score">
-        <div id="user-score"></div>
+      <div id="scores">
+        <div id="user-score">2</div>
         <div id="score-border"> : </div>
-        <div id="computer-score"></div>
+        <div id="computer-score">1</div>
       </div>
 
-      <div id="weapon-selecion">
-        <h2>Choose your weapon…</h2>
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissors</button>
+      <div id="computer-player">
+        <img src="assets/robot.png">
+        <h3>Computer</h3>
       </div>
     </div>
 
-    <div id="popup">
-      <p></p>
-      <button>Play again</button>
+    <div id="weapon-selecion">
+      <h2>Choose your weapon…</h2>
+      <button>Rock</button>
+      <button>Paper</button>
+      <button>Scissors</button>
     </div>
+  </div>
+
+  <div id="popup" class="hidden">
+    <p></p>
+    <button>Play again</button>
   </div>
 
   <script src="app.js"></script>
 </body>
+
 </html>

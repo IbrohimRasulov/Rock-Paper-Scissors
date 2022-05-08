@@ -2,15 +2,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 body {
-  background-color: #f1f5f9;
-  /* font-family: 'Quicksand', sans-serif; */
   font-family: 'Source Code Pro', monospace;
 }
 
-.hidden {
+#container {
+  max-width: 1280px;
+  max-height: 800px;
+}
+
+#title {
+  width: 100%;
+  color: #f6646e;
+  text-align: center;
+  padding: 10px 0 30px 0;
+}
+
+#hands {
+  display: flex;
+  justify-content: center;
+}
+
+#left-hand {
+  width: 150px;
+  margin: 0 70px;
+}
+
+#right-hand {
+  width: 150px;
+  margin: 0 70px;
+}
+
+#players {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 200px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#user-player {
+  width: 120px;
+}
+
+#computer-player {
+  width: 150px;
+}
+
+#scores {
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+  font-size: 5rem;
+  align-items: flex-end;
+}
+
+#weapon-selecion {
+  text-align: center;
+  padding: 30px;
+  font-size: 1.5rem;
+}
+
+#weapon-selecion button {
+  cursor: pointer;
+}
+
+#popup {
   display: none;
-}
-
-button {
-  font-family: 'Source Code Pro', monospace;
 }
