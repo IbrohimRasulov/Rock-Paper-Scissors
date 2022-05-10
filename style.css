@@ -13,7 +13,7 @@ body {
 
 #title {
   width: 100%;
-  color: #f6646e;
+  color: #c839c5;
   text-align: center;
   padding: 20px 0;
   font-size: 2.4rem;
@@ -65,14 +65,60 @@ body {
 
 #weapon-selecion {
   text-align: center;
-  padding: 30px;
-  font-size: 1.5rem;
+  padding-top: 30px;
+  font-size: 1.2rem;
+  color: #4c1d95;
+  font-family: fantasy;
 }
 
 #weapon-selecion button {
   cursor: pointer;
+  margin: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-#popup {
+#weapon-selecion button:hover {
+  background-color: #f6646e;
+  color: #fff;
+}
+
+.popup {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #94a3b8;
+  width: 350px;
+  height: 180px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 5px;
+  color:#e11d48;
+}
+
+.popup p {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 15px 0 40px 0;
+  font-family: fantasy;
+  font-weight: bolder;
+}
+
+.popup button {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.hidden {
   display: none;
+}
+
+.secondary {
+  filter: opacity(20%);
 }

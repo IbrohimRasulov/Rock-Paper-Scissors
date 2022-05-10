@@ -6,11 +6,14 @@ let playerChoice;
 
 const resultTitle = document.querySelector('#title');
 const buttons = document.querySelectorAll('#weapon-selecion button');
-const popup = document.querySelector('#popup');
+const popup = document.querySelector('.popup');
+const popupResult = document.querySelector('.popup p');
+const popupBtn = document.querySelector('.popup button');
 const playerResult = document.querySelector('#user-score');
 const computerResult = document.querySelector('#computer-score');
 const leftHand = document.querySelector('#left-hand img');
 const rightHand = document.querySelector('#right-hand img');
+const container = document.querySelector('#container');
 
 function computerPlay() {
   const randomNum = Math.floor(Math.random() * hands.length);
@@ -47,14 +50,9 @@ const playRound = function (playerSelection, computerSelection) {
 
 const game = function () {
   if (playerScore > computerScore) {
-    console.log(`${playerScore} and ${computerScore}`);
-    console.log('You won!');
-  } else if (playerScore < computerScore) {
-    console.log(`${playerScore} and ${computerScore}`);
-    console.log('You lost!');
+    popupResult.textContent = 'You won!';
   } else {
-    console.log(`${playerScore} and ${computerScore}`);
-    console.log('Tie game!');
+    popupResult.textContent = 'Oh no! You lost!';
   }
 }
 
@@ -79,9 +77,25 @@ buttons.forEach(button => {
 
     if (playerScore === 5 || computerScore === 5) {
       game();
-      popup.classList.remove('hidden')
+      popup.classList.toggle('hidden')
+      container.setAttribute('class', 'secondary');
       playerScore = 0;
       computerScore = 0;
+
+      buttons.forEach(button => {
+        button.setAttribute('disabled', '');
+      });
     }
+  });
+});
+
+popupBtn.addEventListener('click', () => {
+  buttons.forEach(button => {
+    popup.classList.toggle('hidden');
+    container.removeAttribute('class', 'secondary');
+    button.removeAttribute('disabled');
+    playerResult.textContent = 0;
+    computerResult.textContent = 0;
+    resultTitle.textContent = 'ROCK PAPER SCISSORS';
   });
 });
