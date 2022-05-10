@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
+
 <body>
+  <div id="container" disabled>
+    <div id="title">
+      <p>ROCK PAPER SCISSORS</p>
+    </div>
+
+    <div id="hands">
+      <div id="left-hand">
+        <img src="assets/giphy-1.gif">
+      </div>
+
+      <div id="right-hand">
+        <img src="assets/giphy-2.gif">
+      </div>
+    </div>
+
+    <div id="players">
+      <div id="user-player">
+        <img src="assets/player.png">
+        <h3>You</h3>
+      </div>
+
+      <div id="scores">
+        <div id="user-score">0</div>
+        <div id="score-border"> : </div>
+        <div id="computer-score">0</div>
+      </div>
+
+      <div id="computer-player">
+        <img src="assets/robot.png">
+        <h3>Computer</h3>
+      </div>
+    </div>
+
+    <div id="weapon-selecion">
+      <h2>Choose your weapon…</h2>
+      <button>Rock</button>
+      <button>Paper</button>
+      <button>Scissors</button>
+    </div>
+  </div>
+
+  <div class="popup hidden">
+    <p></p>
+    <button>Play again</button>
+  </div>
 
   <script src="app.js"></script>
 </body>
+
 </html>
