@@ -77,7 +77,7 @@ buttons.forEach(button => {
 
     if (playerScore === 5 || computerScore === 5) {
       game();
-      popup.classList.toggle('hidden')
+      popup.classList.toggle('hidden');
       container.setAttribute('class', 'secondary');
       playerScore = 0;
       computerScore = 0;
