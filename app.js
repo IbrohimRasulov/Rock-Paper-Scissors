@@ -17,7 +17,7 @@ const container = document.querySelector('#container');
 
 function computerPlay() {
   const randomNum = Math.floor(Math.random() * hands.length);
-  rightHand.setAttribute('src', `assets/${hands[randomNum]}-right.png`)
+  rightHand.setAttribute('src', `assets/${hands[randomNum]}-right.png`);
   return hands[randomNum];
 }
 
@@ -97,5 +97,7 @@ popupBtn.addEventListener('click', () => {
     playerResult.textContent = 0;
     computerResult.textContent = 0;
     resultTitle.textContent = 'ROCK PAPER SCISSORS';
+    leftHand.setAttribute('src', 'assets/giphy-1.gif');
+    rightHand.setAttribute('src', 'assets/giphy-2.gif');
   });
 });
