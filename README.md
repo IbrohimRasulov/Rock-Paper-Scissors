@@ -1,6 +1,6 @@
 # Rock-Paper-Scissors Game with JavaScript
 
-> Rock-Paper-Scissors is an app that allows you play a classic two-person game. In this game you play with a computer who shows you a random hand-hold until 5 points. And also you are able to record scores and get notified at the end of the game. This is a complete solo project, part of [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors) using given instructions).
+> Rock-Paper-Scissors is an app that allows you play a classic two-person game. In this game you play with a computer who shows you a random hand-hold until 5 points. And also you are able to record scores and get notified the result at the end of the game. This is a complete solo project, part of [The Odin Project](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors) using given instructions.
 
 https://user-images.githubusercontent.com/78875455/167731146-e98099e2-3c48-4149-b28f-f5590d67888a.mp4
 
